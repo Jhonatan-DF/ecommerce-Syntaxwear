@@ -1,0 +1,128 @@
+/* ============================================
+   Modern CSS Reset
+   Based on Andy Bell's CSS Reset
+   https://piccalil.li/blog/a-modern-css-reset/
+   ============================================ */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove default border radius */
+button,
+input,
+select,
+textarea {
+  border-radius: 0;
+}
+
+/* Remove default outline on focus */
+*:focus {
+  outline: 3px solid transparent;
+}
+
+/* Smooth scrolling for users who don't prefer reduced motion */
+@media (prefers-reduced: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set body line height */
+body {
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+}
+
+/* Remove list styles on ul, ol elements with a role attribute */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Remove built-in form button styles */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Remove link underline */
+a {
+  text-decoration: none;
+}
+
+/* Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+ul{
+  list-style: none;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+/* Improve line height in all browsers */
+p {
+  line-height: 1.5;
+}
+
+/* Remove gap from images inside links */
+a img {
+  display: block;
+}
+
+/* Remove animations, transitions and reduced motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
