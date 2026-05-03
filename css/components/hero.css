@@ -13,7 +13,7 @@
     align-items: center;
     justify-content: flex-end;
     padding: 0.6rem;
-    
+
 }
 
 .hero-content {
@@ -22,10 +22,10 @@
     text-align: center;
 }
 
-.hero-buttons{
+.hero-buttons {
     display: flex;
     gap: 16px;
-    
+
 }
 
 .hero-content .hero-title {
@@ -40,6 +40,29 @@
 .hero-content .hero-subtitulo {
     font-size: 1.25rem;
     font-weight: 400
-
 }
 
+@media (max-width: 768px) {
+    .hero-section {
+        height: 660px;
+        background-image: url(../../images/banners/card_imagem.jpg);
+    }
+
+    .hero-overlay {
+        padding: 0;
+    }
+
+    .hro-content {
+        font-size: 1.5rem;
+
+    }
+
+    .hero-content {
+        max-width: 330px;
+        margin: 0 auto;
+    }
+
+    .btn{
+        font-size: 1.2rem;
+    }
+}
