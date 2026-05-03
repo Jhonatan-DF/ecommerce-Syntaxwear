@@ -4,7 +4,8 @@
     top: 60px;
     left: 50%;
     transform: translate(-50%);
-    width: calc(100% - 210px);
+    /* width: calc(100% - 210px); */
+    width: 1260px;
     border-radius: 15px;
     z-index: 999;
     display: flex;
@@ -80,6 +81,7 @@
     transition: opacity 0.3s ease;
 }
 
+
 @media (max-width: 1280px) {
 
     main {
@@ -87,7 +89,7 @@
     }
 
     .header {
-        width: calc(100% -40px);
+       max-width: 80%;
     }
 
     .menu-icon {
@@ -99,7 +101,7 @@
         top: 0;
         right: -100%;
         width: 200px;
-        padding: 60px 20px 20px;
+        padding: 80px 20px 20px;
         flex-direction: column;
         background-color: #ffffff;
         gap: 2rem;
@@ -111,7 +113,6 @@
     .nav-right {
         width: 100%;
         text-align: center;
-        justify-content: center;
     }
 
 
@@ -124,11 +125,12 @@
 
     .nav-center a,
     .nav-right a {
+       
         width: 100%;
         font-size: 1rem;
     }
 
-    .menu-toggle:checked~.nav-container {
+    .menu-toggle:checked ~ .nav-container {
         right: 0;
     }
 

@@ -13,6 +13,9 @@
    height: 500px;
    border-radius: 15px;
    overflow: hidden;
+   display: flex;
+   justify-content: center;
+   
 }
 
 .overlay{
@@ -24,6 +27,9 @@
 
 .category-name{
    position: absolute;
+   font-size: 1.25rem;
+   margin-top: 10px;
+   font-weight: 400;
    left: 50%;
    top: 50%;
    transform: translate(-50%, -50%);
